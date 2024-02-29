@@ -37,8 +37,17 @@ function FloaterArrow(props: Props) {
 
   return (
     <span ref={arrowRef} className="__floater__arrow" style={arrowStyles}>
-      <svg height={y} version="1.1" width={x} xmlns="http://www.w3.org/2000/svg">
-        <polygon fill={color} points={points} />
+      <svg
+        width="30"
+        height="20"
+        viewBox="0 0 16 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.13332 12C0.12566 12 -0.378978 10.3985 0.333544 9.46189L7.20023 0.435471C7.64193 -0.145157 8.35807 -0.145157 8.79977 0.435471L15.6665 9.46189C16.379 10.3985 15.8743 12 14.8667 12H1.13332Z"
+          fill="black"
+        />
       </svg>
     </span>
   );
